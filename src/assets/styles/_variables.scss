@@ -1,0 +1,56 @@
+@import url(//fonts.googleapis.com/css?family=Vibur);
+@import url(//fonts.googleapis.com/css2?family=Comfortaa);
+
+* {
+  font-size: 14px;
+  box-sizing: border-box;
+};
+$font_weigth: ( 
+  "regular": 400,
+  "medium": 600,
+  "bold": 800
+);
+$font_size: (
+  "small": 12px,
+  "medium": 14px,
+  "big": 16px
+);
+$icon_size: (
+  "small": 32px,
+  "medium": 34px,
+  "big": 36px
+);
+$padding_container: (
+  "small": 1rem,
+  "medium": 1.5rem,
+  "big": 2rem
+);
+$margin_container: (
+  "small": 0.5rem,
+  "medium": 0.75rem,
+  "big": 1rem
+);
+@mixin flexContainer($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: flex-start;
+}
+@mixin heighted() {
+  height: 100%;
+}
+@mixin widthed() {
+  width: 100%;
+}
+@mixin centered() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+$font_logo: "Vibur", sans-serif;
+$font_title: "Comfortaa", sans-serif;
+$color_black: #000;
+$color_white: #fff;
+$color_yellow: #e2b220;
+$color_orange: #ff4800;
+$color_blue: #1b1f4c;
+$color_gray: #bdbdbd;
