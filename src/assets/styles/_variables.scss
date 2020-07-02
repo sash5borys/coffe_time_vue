@@ -1,8 +1,9 @@
 @import url(//fonts.googleapis.com/css?family=Vibur);
+@import url(//fonts.googleapis.com/css2?family=Pacifico);
 @import url(//fonts.googleapis.com/css2?family=Comfortaa);
 
 * {
-  font-size: 14px;
+  font-size: 16px;
   box-sizing: border-box;
 };
 $font_weigth: ( 
@@ -11,24 +12,24 @@ $font_weigth: (
   "bold": 800
 );
 $font_size: (
-  "small": 12px,
-  "medium": 14px,
-  "big": 16px
+  "small": 16px,
+  "medium": 18px,
+  "big": 22px
 );
 $icon_size: (
   "small": 32px,
-  "medium": 34px,
-  "big": 36px
+  "medium": 36px,
+  "big": 42px
 );
 $padding_container: (
-  "small": 1rem,
-  "medium": 1.5rem,
-  "big": 2rem
+  "small": 14px,
+  "medium": 16px,
+  "big": 18px
 );
 $margin_container: (
-  "small": 0.5rem,
-  "medium": 0.75rem,
-  "big": 1rem
+  "small": 10px,
+  "medium": 12px,
+  "big": 14px
 );
 @mixin flexContainer($direction) {
   display: flex;
@@ -46,8 +47,9 @@ $margin_container: (
   justify-content: center;
   align-items: center;
 }
-$font_logo: "Vibur", sans-serif;
-$font_title: "Comfortaa", sans-serif;
+$font_logo: "Pacifico", sans-serif;
+$font_title: "Pacifico", sans-serif;
+$font_link: "Comfortaa", sans-serif;
 $color_black: #000;
 $color_white: #fff;
 $color_yellow: #e2b220;

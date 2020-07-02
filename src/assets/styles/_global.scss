@@ -1,0 +1,125 @@
+header, nav, main, footer {
+  width: 100%;
+  min-width: 400px;
+}
+
+a {
+  width: max-content;
+  color: $color-black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.row-container {
+  @include flexContainer(row);
+}
+
+.col-container {
+  @include flexContainer(column);
+}
+
+.nav-items {
+  > a, > button, > li {
+    margin-right: map-get($margin_container, small);
+    @include centered;
+  }
+
+  img {
+    max-width: initial;
+  }
+}
+
+
+// Global Components
+#logo {
+  margin: 0 map-get($margin_container, small);
+
+  a, span {
+    font: map_get($font_weigth, "regular") map_get($icon_size, "small")*2 $font_logo;
+    color: #fff;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+  }
+
+  span {
+    animation: blink linear infinite 2s;
+  }
+
+  span:nth-of-type(2) {
+    animation: blink linear infinite 3s;
+  }
+}
+
+#basket {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  @include centered;
+  height: map_get($icon_size, "small")*1.5;
+  cursor: pointer;
+  color: #a29990;
+
+  &:hover {
+    color: #f8fdf6;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 0 #47ff44, 0 0 0.5em #47ff44, 0 0 0.1em #47ff44, 0 6px 3px #000;
+    filter: drop-shadow(1px 8px 0.1em #222);
+
+    .icon {
+      filter: drop-shadow(1px 1px 0.5em #47ff44);
+    }
+  }
+
+  .count {
+    align-self: flex-start;
+    font: map_get($font_weigth, "regular") map_get($font_size, 'small') $font_title;
+    line-height: 0.5;
+  }
+
+  .icon {
+    height: map_get($icon_size, "small")*1.5;
+    filter: grayscale(100%) brightness(110%) contrast(0.6);
+  }
+
+}
+
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79% {
+    color: #333;
+  }
+  80% {
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+

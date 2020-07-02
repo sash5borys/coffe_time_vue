@@ -1,8 +1,5 @@
 <template>
     <div id="app">
-        <div id="nav">
-            <router-link to="/">Home</router-link>
-        </div>
         <router-view />
     </div>
 </template>
@@ -13,4 +10,4 @@ export default {
 };
 </script>
 
-<style type="scss" scoped></style>
+<style lang="scss" scoped></style>
