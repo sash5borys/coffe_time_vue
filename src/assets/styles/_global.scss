@@ -37,7 +37,6 @@ button {
   }
 }
 
-
 // Global Components
 #logo {
   margin: 0 map-get($margin_container, small);
@@ -65,9 +64,9 @@ button {
   @include centered;
   height: map_get($icon_size, "small")*1.5;
   cursor: pointer;
-  color: #a29990;
+  color: #afa8a8;
 
-  &:hover {
+  &.active {
     color: #f8fdf6;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 0 #47ff44, 0 0 0.5em #47ff44, 0 0 0.1em #47ff44, 0 6px 3px #000;
     filter: drop-shadow(1px 8px 0.1em #222);
@@ -122,4 +121,5 @@ button {
     text-shadow: inherit;
   }
 }
+
 

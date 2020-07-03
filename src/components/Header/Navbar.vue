@@ -2,7 +2,7 @@
     <nav class="navbar">
         <div class="navbar-start">
             <ul class="navbar-links nav-items row-container">
-                <li><a href="#">Меню</a></li>
+                <li><a href="#" class="active">Меню</a></li>
                 <li><a href="#">Як замовити</a></li>
             </ul>
         </div>
@@ -45,10 +45,11 @@ export default {
         a {
             font-size: map_get($font_size, 'small');
             font-weight: 600;
-            color: #a29990;
+            color: #afa8a8;
+            text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #4b352f, 0 0 0.5em #4b352f, 0 0 0.1em #4b352f, 0 10px 3px #000;
             font-family: $font_link, sans-serif;
             text-decoration: none;
-            &:hover {
+            &.active {
                 color: #fffeed;
                 text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f0ff76, 0 0 0.5em #f0ff76, 0 0 0.1em #f0ff76,
                     0 10px 3px #000;
