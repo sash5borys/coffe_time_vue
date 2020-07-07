@@ -43,7 +43,7 @@ export default {
     color: #afa8a8;
     font-size: map_get($font_size, 'small');
     font-weight: 400;
-    font: inherit;
+    font-family: $font_title, sans-serif;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #4b352f, 0 0 0.5em #4b352f, 0 0 0.1em #4b352f, 0 10px 3px #000;
 }
 
