@@ -27,7 +27,7 @@ button {
 }
 
 .nav-items {
-  > a, > button, > li {
+  > a, > button, > li, > span  {
     margin-right: map-get($margin_container, small);
     @include centered;
   }

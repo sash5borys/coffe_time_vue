@@ -1,57 +1,65 @@
 @import url(//fonts.googleapis.com/css?family=Vibur);
 @import url(//fonts.googleapis.com/css2?family=Pacifico);
 @import url(//fonts.googleapis.com/css2?family=Comfortaa);
-@import url(https://fonts.googleapis.com/css2?family=Bad+Script);
+//@import url(//fonts.googleapis.com/css2?family=Bad+Script);
+@import url(//fonts.googleapis.com/css2?family=Amatic+SC);
 
 * {
   font-size: 16px;
   box-sizing: border-box;
-};
-$font_weigth: ( 
-  "regular": 400,
-  "medium": 600,
-  "bold": 800
+}
+
+;
+$font_weigth: (
+        "regular": 400,
+        "medium": 600,
+        "bold": 800
 );
 $font_size: (
-  "small": 16px,
-  "medium": 18px,
-  "big": 22px
+        "small": 16px,
+        "medium": 18px,
+        "big": 22px
 );
 $icon_size: (
-  "small": 32px,
-  "medium": 36px,
-  "big": 42px
+        "small": 32px,
+        "medium": 36px,
+        "big": 42px
 );
 $padding_container: (
-  "small": 14px,
-  "medium": 16px,
-  "big": 18px
+        "small": 14px,
+        "medium": 16px,
+        "big": 18px
 );
 $margin_container: (
-  "small": 10px,
-  "medium": 12px,
-  "big": 14px
+        "small": 10px,
+        "medium": 12px,
+        "big": 14px
 );
 @mixin flexContainer($direction) {
   display: flex;
   flex-direction: $direction;
   justify-content: flex-start;
 }
+
 @mixin heighted() {
   height: 100%;
 }
+
 @mixin widthed() {
   width: 100%;
 }
+
 @mixin centered() {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 $font_logo: "Pacifico", sans-serif;
 $font_title: "Pacifico", sans-serif;
 $font_link: "Comfortaa", sans-serif;
-$font_feedback: "Bad Script", sans-serif;
+//$font_feedback: "Bad Script", sans-serif;
+$font_product: "Amatic SC", sans-serif;
 $color_black: #000;
 $color_white: #fff;
 $color_yellow: #e2b220;
