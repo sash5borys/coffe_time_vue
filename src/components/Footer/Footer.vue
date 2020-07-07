@@ -25,7 +25,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
     padding: map_get($padding_container, 'small');
-    box-shadow: 0px 4px 4px #252525;
+    box-shadow: 0px -4px 4px #222;
     background: url('~@/assets/images/wood.jpg') center;
     .footer_top {
         justify-content: space-evenly;

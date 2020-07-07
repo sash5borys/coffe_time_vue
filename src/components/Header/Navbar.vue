@@ -19,8 +19,8 @@
 </template>
 
 <script>
-// import 'animate.compat.css';
 import { mapGetters } from 'vuex';
+
 export default {
     name: 'Navbar',
     computed: {
@@ -35,7 +35,7 @@ export default {
     top: 0;
     z-index: 998;
     padding: map_get($padding_container, 'small');
-    box-shadow: 0px 4px 4px #888888;
+    box-shadow: 0px 4px 4px #222;
     @include centered;
     background: url('~@/assets/images/wood.jpg') center;
     #logo {
