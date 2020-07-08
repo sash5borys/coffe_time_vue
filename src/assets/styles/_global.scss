@@ -27,7 +27,7 @@ button {
 }
 
 .nav-items {
-  > a, > button, > li {
+  > a, > button, > li, > span {
     margin-right: map-get($margin_container, small);
     @include centered;
   }
@@ -58,33 +58,76 @@ button {
 
 #basket {
   position: fixed;
+  height: max-content;
   right: 20px;
   bottom: 20px;
   z-index: 999;
-  @include centered;
-  height: map_get($icon_size, "small")*1.5;
+  align-items: flex-end;
   cursor: pointer;
   color: #afa8a8;
+  transition: all 0.2s ease-out;
 
   &.active {
-    color: #f8fdf6;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 0 #47ff44, 0 0 0.5em #47ff44, 0 0 0.1em #47ff44, 0 6px 3px #000;
-    filter: drop-shadow(1px 8px 0.1em #222);
+    .basket-icon {
+      color: #f8fdf6;
+      text-shadow: 0 -40px 100px, 0 0 2px, 0 0 0 #47ff44, 0 0 0.5em #47ff44, 0 0 0.1em #47ff44, 0 6px 3px #000;
+      filter: drop-shadow(1px 8px 0.1em #222);
 
-    .icon {
-      filter: drop-shadow(1px 1px 0.5em #47ff44);
+      .icon {
+        filter: drop-shadow(1px 1px 0.5em #47ff44);
+      }
     }
   }
 
-  .count {
-    align-self: flex-start;
-    font: map_get($font_weigth, "regular") map_get($font_size, 'small') $font_title;
-    line-height: 0.5;
+  .basket-popup {
+    display: none;
+    margin-bottom: map_get($margin_container, "small");
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    filter: drop-shadow(2px 8px 0.1em #222);
+    transition: all 0.2s ease-out;
+
+    &.visible {
+      display: flex;
+    }
+
+    .basket-popup-close {
+      align-self: flex-end;
+      width: fit-content;
+      padding: 8px 8px;
+      font-size: map_get($font_size, 'small');
+      font-weight: 600;
+      font-family: $font_link, sans-serif;
+      color: #afa8a8;
+    }
+
+    .basket-submit {
+      width: 100%;
+      padding: map_get($padding_container, "small");
+      font-size: map_get($font_size, 'small');
+      font-weight: 600;
+      font-family: $font_link, sans-serif;
+      color: #afa8a8;
+
+      &:hover {
+        color: #f8fdf6;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 0 #47ff44, 0 0 0.5em #47ff44, 0 0 0.1em #47ff44, 0 6px 3px #000;
+      }
+    }
   }
 
-  .icon {
-    height: map_get($icon_size, "small")*1.5;
-    filter: grayscale(100%) brightness(110%) contrast(0.6);
+  .basket-icon {
+    .count {
+      align-self: flex-start;
+      font: map_get($font_weigth, "regular") map_get($font_size, 'small') $font_title;
+      line-height: 0.5;
+    }
+
+    .icon {
+      height: map_get($icon_size, "small")*1.5;
+      filter: grayscale(100%) brightness(110%) contrast(0.6);
+    }
   }
 
 }
