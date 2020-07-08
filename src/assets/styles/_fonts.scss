@@ -1,0 +1,35 @@
+//@import url('~@/assets/fonts/Vibur/Vibur.ttf');
+//@import url(//fonts.googleapis.com/css2?family=Pacifico);
+//@import url(//fonts.googleapis.com/css2?family=Comfortaa);
+//@import url(//fonts.googleapis.com/css2?family=Amatic+SC);
+
+$font-dir: "~@/assets/fonts/";
+
+@font-face {
+  font-family: "Vibur";
+  src: url("#{$font-dir}Vibur/Vibur.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("#{$font-dir}Pacifico/Pacifico.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("#{$font-dir}Comfortaa/Comfortaa.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Amatic SC";
+  src: url("#{$font-dir}Amatic_SC/Amatic_SC.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
